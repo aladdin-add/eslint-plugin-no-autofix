@@ -34,7 +34,7 @@ add prefix "no-autofix" to the rulename in eslintrc:
 
 ## Supported rules
 
-It supports [all eslint core rules](https://eslint.org).
+It supports [all eslint core rules](https://eslint.org/docs/rules/).
 
 ## Acknowledgement
 
