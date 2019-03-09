@@ -26,6 +26,7 @@
     "eslint-plugin-autofix": "0.0.4",
     "eslint-plugin-eslint-plugin": "^2.0.1",
     "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-self": "^1.2.0",
     "husky": "^1.3.1",
     "mocha": "^5.2.0"
   },
@@ -40,10 +41,12 @@
     "extends": [
       "eslint"
     ],
-    "plugins": ["autofix"],
+    "plugins": [
+      "autofix",
+      "self"
+    ],
     "rules": {
-        "autofix/no-debugger": "error",
-        "autofix/no-console": "error"
+      "self/prefer-const": 2
     },
     "overrides": [
       {
