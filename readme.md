@@ -11,22 +11,23 @@
 
 # eslint-plugin-no-autofix
 
-## Why?
+## Why
 
-TODO
+[Some warnings is auto-fixable but we do not want to fix it, like "prefer-const" .](https://github.com/Microsoft/vscode-eslint/issues/208)
 
 ## Install & usage
 
 ```bash
-$ npm i eslint-plugin-no-autofix -D
+npm i eslint-plugin-no-autofix -D
 ```
 
 add prefix "no-autofix" to the rulename in eslintrc:
+
 ```js
 {
   "plugins": ["no-autofix"],
   "rules": {
-    "no-autofix/no-debugger": "error"
+    "no-autofix/prefer-const": "error"
   }
 }
 ```
@@ -36,5 +37,6 @@ add prefix "no-autofix" to the rulename in eslintrc:
 It supports [all eslint core rules](https://eslint.org).
 
 ## Acknowledgement
+
 + [ESLint](https://eslint.org)
 + [eslint-rule-composer](https://github.com/not-an-aardvark/eslint-rule-composer)
