@@ -7,7 +7,7 @@
 const rule = require("../../../lib/rules").quotes,
     RuleTester = require("eslint").RuleTester;
 
-const ruleTester = new RuleTester();
+const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 9 } });
 
 ruleTester.run("quotes", rule, {
     valid: [
